@@ -1,59 +1,24 @@
 <!DOCTYPE html>
-<html><script type="text/javascript" charset="utf-8" id="zm-extension" src="index_files/webrtc-patch.js" async=""></script><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html><head>
+<meta http-equiv=content-type content="text/html; charset=UTF-8">
+<meta charset=utf8>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
 <title></title>
-<style>
-body, html {
-margin : 0;
-padding : 0;
-height : 100%;
-}
-.left {float : left;}
-.right {float : right;}
-.clear {clear : both;}
-.a {
-background-color : #ff69b4;
-}
-.b {
-background-color : #003200;
-}
-
-.block {
-height : 50%;
-width : 50%;
-}
-</style>
-<script>
-function g (id) {
-  return document.getElementById(id);
-}
-
-function newColor (s) {
-  return s ? "#ff69b4" : "#003200";
-}
-window.onload = function() {
-  var s = 0;
-  setInterval(function() {
-    g("first").style.backgroundColor = newColor((s + 1)%2);
-    g("second").style.backgroundColor = newColor(s);
-    g("third").style.backgroundColor = newColor(s);
-    g("fourth").style.backgroundColor = newColor((s + 1)%2);
-    s++;
-    s%=2;
-  }, 1000);
-}
-</script>
+<style>body, html{margin:0;padding:0;height:100%;}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.a{background-color:#ff69b4;}
+.b{background-color:#003200;}
+.block{height:50%;width:50%;}</style>
+<script>function g(id){return document.getElementById(id);}
+function newColor(s){return s?"#ff69b4":"#003200";}
+window.onload=function(){var s=0;setInterval(function(){g("first").style.backgroundColor=newColor((s+1)%2);g("second").style.backgroundColor=newColor(s);g("third").style.backgroundColor=newColor(s);g("fourth").style.backgroundColor=newColor((s+1)%2);s++;s%=2;},1000);}</script>
 </head>
 <body>
-<div id="first" class="block a left" style="background-color: rgb(0, 50, 0);"></div>
-<div id="second" class="block b right" style="background-color: rgb(255, 105, 180);"></div>
-<div class="clear"></div>
-<div id="third" class="block b left" style="background-color: rgb(255, 105, 180);"></div>
-<div id="fourth" class="block a right" style="background-color: rgb(0, 50, 0);"></div>
-
-
-
-
+<div id=first class="block a left" style="background-color: rgb(0, 50, 0);"></div>
+<div id=second class="block b right" style="background-color: rgb(255, 105, 180);"></div>
+<div class=clear></div>
+<div id=third class="block b left" style="background-color: rgb(255, 105, 180);"></div>
+<div id=fourth class="block a right" style="background-color: rgb(0, 50, 0);"></div>
 </body></html>
